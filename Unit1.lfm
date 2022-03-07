@@ -1,0 +1,177 @@
+object Form1: TForm1
+  Left = 902
+  Height = 310
+  Top = 341
+  Width = 258
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'ЧИС/ЗНАМ , v2022'
+  ClientHeight = 310
+  ClientWidth = 258
+  Color = 13624551
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.0.4'
+  object SpeedButton2: TSpeedButton
+    Left = 134
+    Height = 26
+    Top = 275
+    Width = 105
+    Caption = '<<< Настройка'
+    Down = True
+    GroupIndex = 1
+    Visible = False
+    OnClick = SpeedButton2Click
+  end
+  object Label1: TLabel
+    Left = 6
+    Height = 21
+    Top = 6
+    Width = 243
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'ЧТО СЕЙЧАС ????'
+    Font.Color = 1912866
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    ParentFont = False
+  end
+  object Bevel1: TBevel
+    Left = 16
+    Height = 225
+    Top = 33
+    Width = 223
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 134
+    Height = 26
+    Top = 275
+    Width = 105
+    Caption = 'Настройка >>>>'
+    GroupIndex = 1
+    OnClick = SpeedButton1Click
+  end
+  object Button1: TButton
+    Left = 36
+    Height = 26
+    Top = 372
+    Width = 161
+    Caption = 'ОБНОВИТЬ'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 49
+    Height = 22
+    Top = 220
+    Width = 154
+    Caption = 'НА СЕГОДНЯ'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object MonthCalendar1: TCalendar
+    Left = 31
+    Height = 177
+    Top = 39
+    Width = 193
+    DateTime = 44627
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 16
+    Height = 26
+    Top = 275
+    Width = 101
+    Caption = 'Выход'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 16
+    Height = 225
+    Top = 31
+    Width = 223
+    BevelWidth = 2
+    ClientHeight = 225
+    ClientWidth = 223
+    Color = 12964303
+    ParentColor = False
+    TabOrder = 4
+    Visible = False
+    object Bevel3: TBevel
+      Left = 28
+      Height = 37
+      Top = 172
+      Width = 164
+      Shape = bsTopLine
+      Style = bsRaised
+    end
+    object Label4: TLabel
+      Cursor = crHandPoint
+      Left = 40
+      Height = 32
+      Top = 177
+      Width = 126
+      Alignment = taCenter
+      Caption = 'talipovsn@hotmail.com '#10'Талипов С.Н., Павлодар'
+      WordWrap = True
+      OnClick = Label4Click
+    end
+    object GroupBox1: TGroupBox
+      Left = 33
+      Height = 52
+      Top = 13
+      Width = 154
+      Caption = 'Настройка'
+      ClientHeight = 35
+      ClientWidth = 152
+      TabOrder = 0
+      object CheckBox1: TCheckBox
+        Left = 16
+        Height = 23
+        Top = 0
+        Width = 83
+        Caption = 'Смещение'
+        Checked = True
+        Font.Color = 1250067
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        OnClick = Button1Click
+        ParentFont = False
+        State = cbChecked
+        TabOrder = 0
+      end
+      object BitBtn1: TBitBtn
+        Left = 112
+        Height = 25
+        Top = 0
+        Width = 26
+        Caption = ' '
+        Kind = bkHelp
+        OnClick = BitBtn1Click
+        TabOrder = 1
+      end
+    end
+    object Memo1: TMemo
+      Left = 15
+      Height = 81
+      Top = 80
+      Width = 194
+      Alignment = taCenter
+      ScrollBars = ssVertical
+      TabOrder = 1
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 568
+    Top = 368
+  end
+end
